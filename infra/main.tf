@@ -34,5 +34,5 @@ resource "aws_s3_bucket" "assets" {
 
   tags = {
     Purpose = "pipeline-test"
-  }
+        }
 }
