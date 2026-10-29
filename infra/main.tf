@@ -31,4 +31,8 @@ provider "aws" {
 resource "aws_s3_bucket" "assets" {
   bucket_prefix = "fan-platform-assets-"
   force_destroy = true # practice only, so destroy works with objects inside
+
+  tags = {
+    Purpose = "pipeline-test"
+  }
 }
